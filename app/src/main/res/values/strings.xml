@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WinScan</string>
+
+
+    <string name="insert_item_btn">Insert Item </string>
+
+    <string name="show_item_btn">Show Item </string>
+    <string name="insert_scanned_btn">Save item </string>
+    <string name="upload_btn">upload Data </string>
+
+
+    <string name="Barcode_edit_Txt">Enter item Barcode</string>
+    <string name="name_edit_Txt">Enter item name</string>
+    <string name="qty_edit_Txt">Enter item quantity</string>
+    <string name="time_edit_Txt">Enter item time</string>
+    <string name="dialog_txt_ok">Ok Delete</string>
+    <string name="dialog_txt_no"> Discard</string>
+    <string name="dialog_txt_message">Are you sure you want to delete this item</string>
+    <string name="dialog_txt_title">Warning</string>
+
+
+
+</resources>

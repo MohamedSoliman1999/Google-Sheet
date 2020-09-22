@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.InsertActivity.InsertActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/barcode_editTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_txt_desgin"
+            android:elevation="10dp"
+            android:hint="@string/Barcode_edit_Txt"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/text_blue"
+
+            android:textColorHint="@color/text_grey"
+            android:textSize="15sp"
+
+
+            />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/name_editTxt"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginStart="25dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginEnd="25dp"-->
+        <!--            android:background="@drawable/edit_txt_desgin"-->
+        <!--            android:elevation="10dp"-->
+        <!--            android:hint="@string/name_edit_Txt"-->
+        <!--            android:inputType="text"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:textColor="@color/text_blue"-->
+        <!--            android:textColorHint="@color/text_grey"-->
+
+
+        <!--            />-->
+
+        <EditText
+            android:id="@+id/qty_editTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_txt_desgin"
+            android:elevation="10dp"
+            android:hint="@string/qty_edit_Txt"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/text_blue"
+            android:textColorHint="@color/text_grey"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/insertToData_btn"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/show_btn_desgin"
+                android:elevation="15dp"
+                android:padding="3dp"
+                android:text="@string/insert_scanned_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/text_white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/uploadData_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/show_btn_desgin"
+                android:elevation="15dp"
+                android:padding="3dp"
+                android:text="@string/insert_scanned_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/text_white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/item_barcode_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Barcode"
+                android:textColor="@color/text_blue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/item_qty_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Qty"
+                android:textColor="@color/text_blue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Time"
+                android:textColor="@color/text_blue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Status"
+                android:textColor="@color/text_blue"
+                android:textSize="15sp"
+
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/insert_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@color/colorAccent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="7dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/insertRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/stock_item">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
